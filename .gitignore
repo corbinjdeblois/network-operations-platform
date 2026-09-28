@@ -1,0 +1,61 @@
+# Python environments, caches, builds
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Runtime secrets and local settings
+.env
+.env.*
+!.env.example
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Generated and operational data (Git ignores do not stop OneDrive sync)
+/data/*
+!/data/sample/
+/private/
+/snapshots/
+/output/
+/outputs/
+/runtime/
+/logs/
+/backups/
+*.pcap
+*.pcapng
+*.sqlite
+*.sqlite3
+*.db
+
+# Lab-generated state and private inventories
+/lab/clab-*/
+/lab/.runtime/
+/inventory/private/
+/inventory/local.*
+
+# Infrastructure state; keep provider lockfiles versioned
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+
+# Local tools and OS metadata
+.tmp/
+.DS_Store
+Thumbs.db
+*.log
